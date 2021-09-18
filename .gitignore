@@ -18,3 +18,4 @@ local.properties
 .idea/.name
 app/release/output-metadata.json
 app/release/screening_tool.apk
+/wechat_intro.txt

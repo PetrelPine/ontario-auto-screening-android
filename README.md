@@ -1,8 +1,12 @@
 # Ontario Auto Screening (Android)
 
-## How to Use
+## Download Android App
 
-**By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario Daily Screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
++ **You can always download the Android app in [releases](https://github.com/PetrelPine/ontario-auto-screening-android/releases).**
+
+## Confirmation at Start-up
+
++ **By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario Daily Screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
 
 1. I am taking this screening as a student/child.
 
@@ -16,15 +20,15 @@
 
 6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.
 
-7. There is NOBODY I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.
+7. There are NO people I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.
 
 8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.
 
 ## App Demos
 
-- App Start
+- Start Page
 
-![AppStart](resource/AppStart.gif)
+![StartPage](resource/StartPage.gif)
 
 - Web Page
 
@@ -35,5 +39,7 @@
 + covid-19-screening-tools
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ongov&repo=covid-19-screening-tools)](https://github.com/ongov/covid-19-screening-tools)
+
+*You can post an issue if you have any questions. Hope this project could bring you convenience.*
 
 *If you think this project is helpful, please give me a star for support, thanks!*
