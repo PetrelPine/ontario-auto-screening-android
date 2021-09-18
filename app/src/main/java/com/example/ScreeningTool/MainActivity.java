@@ -16,19 +16,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle("Confirmation");
+        alertDialog.setTitle("Screening Confirmation");
         alertDialog.setMessage(
-                "\nI confirm that ALL the following information is CORRECT and I am RESPONSIBLE for the information I provided.\n\n\n" +
+                "\nI confirm that all the following information is correct and I am responsible for the information I provided.\n\n\n" +
                 "1. I am taking this screening as a student/child.\n\n" +
                 "2. In the last 14 days, I have NOT travelled outside of Canada.\n\n" +
                 "3. There is NO doctor, health care provider, or public health unit has told me that I should currently be isolating (staying at home).\n\n" +
                 "4. In the last 10 days, I have NOT been identified as a “close contact” of someone who currently has COVID-19.\n\n" +
                 "5. In the last 10 days, I have NOT received a COVID Alert exposure notification on my cell phone.\n\n" +
                 "6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.\n\n" +
-                "7. There is NOBODY I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.\n\n" +
+                "7. There are NO people I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.\n\n" +
                 "8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.\n\n\n" +
-                "The repo is posted on Github [https://github.com/PetrelPine/ontario-auto-screening].\n\n" +
-                "Programmed by PetrelPine.");
+                "This repo is posted on Github [https://github.com/PetrelPine/ontario-auto-screening]\n\n" +
+                "(programmed by PetrelPine)");
 
         alertDialog.setPositiveButton("DECLINE", new DialogInterface.OnClickListener() {//添加退出按钮
             @Override

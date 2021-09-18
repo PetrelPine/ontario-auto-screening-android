@@ -15,6 +15,14 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                // 此处指定生成的apk文件名
+                outputFileName = "screening_tool.apk"
+            }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

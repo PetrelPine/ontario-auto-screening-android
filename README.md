@@ -1,6 +1,8 @@
-## Ontario Auto Screening
+# Ontario Auto Screening (Android)
 
-**By comfirming the following eight statements by one click at the start up of the app, it will show you the Ontario Daily Screening result directly without anymore annoying clickings.**
+## How to Use
+
+**By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario Daily Screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
 
 1. I am taking this screening as a student/child.
 
@@ -17,5 +19,21 @@
 7. There is NOBODY I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.
 
 8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.
+
+## App Demos
+
+- App Start
+
+![AppStart](resource/AppStart.gif)
+
+- Web Page
+
+![WebPage](resource/WebPage.gif)
+
+## Thanks for the following projects
+
++ covid-19-screening-tools
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ongov&repo=covid-19-screening-tools)](https://github.com/ongov/covid-19-screening-tools)
 
 *If you think this project is helpful, please give me a star for support, thanks!*
