@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charSet="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <style>
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>COVID-19 school screening</title>
+        <style>
             .ontario-main-header {
                 background: #1a1a1a;
                 color: #fff;
@@ -2364,22 +2364,7 @@
                 border-left: 4px solid #118847
             }
         </style>
-    <meta name="generator" content="Gatsby 2.26.1"/>
-    <title data-react-helmet="true">COVID-19 school screening</title>
-    <link data-react-helmet="true" rel="canonical" href="https://covid-19.ontario.ca/school-screening/approved/"/>
-    <meta data-react-helmet="true" name="description" content="You must screen for COVID-19 every day before going to school. Answer the following questions to help you decide if you should or should not go to school today."/>
-    <meta data-react-helmet="true" property="og:title" content="COVID-19 school screening"/>
-    <meta data-react-helmet="true" property="og:description" content="You must screen for COVID-19 every day before going to school. Answer the following questions to help you decide if you should or should not go to school today."/>
-    <meta data-react-helmet="true" property="og:type" content="website"/>
-    <meta data-react-helmet="true" property="og:url" content="https://covid-19.ontario.ca/school-screening"/>
-    <meta data-react-helmet="true" property="og:image" content="https://covid-19.ontario.ca/covid-19-cs-assets/school_social_image_en.png"/>
-    <meta data-react-helmet="true" property="og:locale" content="en_CA"/>
-    <meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/>
-    <meta data-react-helmet="true" name="twitter:site" content="@ONThealth"/>
-    <meta data-react-helmet="true" name="twitter:creator" content="@ONThealth"/>
-    <meta data-react-helmet="true" name="twitter:title" content="COVID-19 school screening"/>
-    <meta data-react-helmet="true" name="twitter:description" content="You must screen for COVID-19 every day before going to school. Answer the following questions to help you decide if you should or should not go to school today."/>
-    <style data-styled="" data-styled-version="5.2.1">
+        <style data-styled="" data-styled-version="5.2.1">
             .kLQYrM {
                 color: white;
                 display: block;
@@ -2934,245 +2919,209 @@
 
             /*!sc*/
         </style>
-    <!-- <link crossorigin="" href="https://www.google-analytics.com" rel="preconnect"/>
-    <link crossorigin="" href="https://www.googletagmanager.com" rel="preconnect"/>
-    <link rel="icon" href="/covid-19-cs-assets/favicon-32x32.png?v=95d5a2a6253850552d499cd53df6b4a2" type="image/png"/>
-    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/>
-    <meta name="theme-color" content="#663399"/>
-    <link rel="apple-touch-icon" sizes="48x48" href="/covid-19-cs-assets/icons/icon-48x48.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/covid-19-cs-assets/icons/icon-72x72.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="96x96" href="/covid-19-cs-assets/icons/icon-96x96.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/covid-19-cs-assets/icons/icon-144x144.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="192x192" href="/covid-19-cs-assets/icons/icon-192x192.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="256x256" href="/covid-19-cs-assets/icons/icon-256x256.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="384x384" href="/covid-19-cs-assets/icons/icon-384x384.png?v=95d5a2a6253850552d499cd53df6b4a2"/>
-    <link rel="apple-touch-icon" sizes="512x512" href="/covid-19-cs-assets/icons/icon-512x512.png?v=95d5a2a6253850552d499cd53df6b4a2"/> -->
-    <!-- <script>
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-                "platform": "gatsby"
-            });
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0]
-                  , j = d.createElement(s)
-                  , dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '';
-                f.parentNode.insertBefore(j, f);
+        <script>
+            window.onload=function() {//页面加载调用
+                //开始先刷新一次
+                NowTime();
+                //每30秒刷新时间
+                setInterval("NowTime()",30000);
             }
-            )(window, document, 'script', 'dataLayer', 'GTM-K5KHLWD');
-        </script> -->
-    <script>
-        window.alert('A');
-        //页面加载调用
-        window.onload=function(){
-            window.alert('A');
-            NowTime();
-            //每60秒刷新时间
-            setInterval("NowTime()",60000);
-        }
-        NowTime();
-        function NowTime(){
-            //获取年月日
-            var time=new Date();
-            var year=time.getFullYear();
-            var month=time.getMonth();
-            var day=time.getDate();
 
-            //获取时分秒
-            var h=time.getHours();
-            var m=time.getMinutes();
-            var s=time.getSeconds();
+            function NowTime() {//更改html显示的时间
+                //获取年月日
+                var time=new Date();
+                var year=time.getFullYear();
+                var month=time.getMonth();
+                var day=time.getDate();
 
-            //当前时间
-            var timeStart = setAmPm(h, m);
+                //获取时分秒
+                var h=time.getHours();
+                var m=time.getMinutes();
+                var s=time.getSeconds();
 
-            //document.getElementById("timePeriod").innerHTML="当前时间："+year+"年"+month+"月"+day+"日  "+h+":"+m+":"+s;
-            document.getElementById("datePeriod").innerHTML=setDate(year, month, day);
-            // from  4:27 p.m.  to 11:59 p.m.
-            document.getElementById("timePeriod").innerHTML="from  " + timeStart + "  to 11:59 p.m.";
-        }
+                //当前时间
+                var timeStart = setAmPm(h, m);
 
-        function setAmPm(h1, m1) {
-            if (m1 < 10) {
-                m1 = "0"+m1;
+                document.getElementById("datePeriod").innerHTML=setDate(year, month, day);
+                // from  4:27 p.m.  to 11:59 p.m.
+                document.getElementById("timePeriod").innerHTML="from  " + timeStart + "  to 11:59 p.m.";
             }
-            if (h1 > 12) {
-                h1 -= 12;
-                return h1+":"+m1+" p.m.";
-            }
-            else {
-                return h1+":"+m1+" a.m.";
-            }
-        }
 
-        function setDate(year1, month1, day1) {
-            var x;
-            month1 += 1;
-            switch (month1)
-            {
-              case 1:x="January"; break;
-              case 2:x="February"; break;
-              case 3:x="March"; break;
-              case 4:x="April"; break;
-              case 5:x="May"; break;
-              case 6:x="June"; break;
-              case 7:x="July"; break;
-              case 8:x="August"; break;
-              case 9:x="September"; break;
-              case 10:x="October"; break;
-              case 11:x="November"; break;
-              case 12:x="December"; break;
+            function setAmPm(h1, m1) {//判断上午/下午
+                if (m1 < 10) {
+                    m1 = "0"+m1;
+                }
+                if (h1 > 12) {
+                    h1 -= 12;
+                    return h1+":"+m1+" p.m.";
+                }
+                else {
+                    return h1+":"+m1+" a.m.";
+                }
             }
-            //Valid September 14, 2021
-            return "Valid " + x + " " + day1 + ", " + year1;
-        }
-    </script>
-</head>
-<body>
-<div id="___gatsby">
-    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
-                <span>
-                    <div class="ontario-text-center ontario-hide-for-print">
-                        <a href="#reach-skip-nav" data-reach-skip-link="" data-reach-skip-nav-link="">Skip to main content</a>
-                    </div>
-                    <div class="content-wrapper">
-                        <header class="ontario-main-header">
-                            <div class="ontario-row">
-                                <div class="ontario-small-5 ontario-columns">
-                                    <a href="" class="ontario-main-header__logo-link">
-                                        <img class="ontario-header-logo ontario-hide-for-print" src="data:image/png;base64,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" alt="Government of Ontario homepage"/>
-                                    </a>
-                                    <img class="ontario-site-logo-print ontario-show-for-print" src="data:image/png;base64,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" alt="Government of Ontario logo"/>
-                                </div>
-                                <div class="ontario-small-7 ontario-columns ontario-text-right ontario-main-header__link">
-                                    <a href="" class="ontario-hide-for-small-only">français</a>
-                                    <a href="" class="ontario-show-for-small-only">FR</a>
-                                </div>
-                            </div>
-                        </header>
-                        <main id="main-content">
-                            <div id="reach-skip-nav" data-reach-skip-nav-content="">
-                                <div color="#118847" class="outcome-header__Container-sc-8cagav-0 kLQYrM">
-                                    <p color="#d1efd4" class="outcome-header__Title-sc-8cagav-1 eSwNPP">COVID-19 school screening result</p>
-                                    <h1 class="outcome-header__Heading-sc-8cagav-2 jcNQhA">Go to school / child care</h1>
-                                    <div class="outcome-header__Icon-sc-8cagav-3 fUOfLq">
-                                        <div class="approved-template__HeadingCheckmark-sc-1wl4dlr-0 fIDQzJ"></div>
+
+            function setDate(year1, month1, day1) {//判断日期
+                var x;
+                month1 += 1;
+                switch (month1)
+                {
+                  case 1:x="January"; break;
+                  case 2:x="February"; break;
+                  case 3:x="March"; break;
+                  case 4:x="April"; break;
+                  case 5:x="May"; break;
+                  case 6:x="June"; break;
+                  case 7:x="July"; break;
+                  case 8:x="August"; break;
+                  case 9:x="September"; break;
+                  case 10:x="October"; break;
+                  case 11:x="November"; break;
+                  case 12:x="December"; break;
+                }
+                //Valid September 14, 2021
+                return "Valid " + x + " " + day1 + ", " + year1;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+                    <span>
+                        <div class="ontario-text-center ontario-hide-for-print">
+                            <a href="#reach-skip-nav" data-reach-skip-link="" data-reach-skip-nav-link="">Skip to main content</a>
+                        </div>
+                        <div class="content-wrapper">
+                            <header class="ontario-main-header">
+                                <div class="ontario-row">
+                                    <div class="ontario-small-5 ontario-columns">
+                                        <a href="" class="ontario-main-header__logo-link">
+                                            <img class="ontario-header-logo ontario-hide-for-print" src="data:image/png;base64,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" alt="Government of Ontario homepage"/>
+                                        </a>
+                                        <img class="ontario-site-logo-print ontario-show-for-print" src="data:image/png;base64,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" alt="Government of Ontario logo"/>
+                                    </div>
+                                    <div class="ontario-small-7 ontario-columns ontario-text-right ontario-main-header__link">
+                                        <a href="" class="ontario-hide-for-small-only">français</a>
+                                        <a href="" class="ontario-show-for-small-only">FR</a>
                                     </div>
                                 </div>
-                                <div class="approved__HeaderDate-sc-3gu5f4-0 FEouO">
+                            </header>
+                            <main id="main-content">
+                                <div id="reach-skip-nav" data-reach-skip-nav-content="">
+                                    <div color="#118847" class="outcome-header__Container-sc-8cagav-0 kLQYrM">
+                                        <p color="#d1efd4" class="outcome-header__Title-sc-8cagav-1 eSwNPP">COVID-19 school screening result</p>
+                                        <h1 class="outcome-header__Heading-sc-8cagav-2 jcNQhA">Go to school / child care</h1>
+                                        <div class="outcome-header__Icon-sc-8cagav-3 fUOfLq">
+                                            <div class="approved-template__HeadingCheckmark-sc-1wl4dlr-0 fIDQzJ"></div>
+                                        </div>
+                                    </div>
+                                    <div class="approved__HeaderDate-sc-3gu5f4-0 FEouO">
+                                        <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
+                                            <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
+                                                <span class="approved__IconCalendar-sc-3gu5f4-1 dVsGOl"></span>
+                                            </div>
+                                            <h2 id="datePeriod", class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Valid September 14, 2021</h2>
+                                            <div id="timePeriod", class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">from  4:27 p.m.  to 11:59 p.m.</div>
+                                        </div>
+                                    </div>
+                                    <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx downloadPDF">
+                                        <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
+                                            <span class="approved-template__IconDownload-sc-1wl4dlr-4 jlQzJl"></span>
+                                        </div>
+                                        <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
+                                        <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
+                                            <div class="approved-template__ButtonWrap-sc-1wl4dlr-9 ciftSh ontario-hide-for-print">
+                                                <a href="">
+                                                    <div tabindex="0" class="approved-template__HyperlinkButton-sc-1wl4dlr-8 hUCwNy">
+                                                        Email result
+                                                        <span class="approved-template__IconEmail-sc-1wl4dlr-5 qhdLA"></span>
+                                                    </div>
+                                                </a>
+                                                <br/>
+                                                <br/>
+                                                <div tabindex="0" class="approved-template__HyperlinkButton-sc-1wl4dlr-8 hUCwNy">Download result (PDF)</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
                                         <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
-                                            <span class="approved__IconCalendar-sc-3gu5f4-1 dVsGOl"></span>
+                                            <span class="approved-template__IconInfo-sc-1wl4dlr-1 bMOFeO"></span>
                                         </div>
-                                        <h2 id="datePeriod", class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Valid September 14, 2021</h2>
-                                        <div id="timePeriod", class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">from  4:27 p.m.  to 11:59 p.m.</div>
-                                    </div>
-                                </div>
-                                <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx downloadPDF">
-                                    <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
-                                        <span class="approved-template__IconDownload-sc-1wl4dlr-4 jlQzJl"></span>
-                                    </div>
-                                    <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
-                                    <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
-                                        <div class="approved-template__ButtonWrap-sc-1wl4dlr-9 ciftSh ontario-hide-for-print">
-                                            <a href="">
-                                                <div tabindex="0" class="approved-template__HyperlinkButton-sc-1wl4dlr-8 hUCwNy">
-                                                    Email result
-                                                    <span class="approved-template__IconEmail-sc-1wl4dlr-5 qhdLA"></span>
-                                                </div>
-                                            </a>
-                                            <br/>
-                                            <br/>
-                                            <div tabindex="0" class="approved-template__HyperlinkButton-sc-1wl4dlr-8 hUCwNy">Download result (PDF)</div>
+                                        <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
+                                        <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
+                                            <p>You can go to school/child care.</p>
+                                            <p>If you feel sick or not well (not related to getting a COVID-19 vaccine in the last 48 hours), please stay home. Talk with a doctor if necessary.</p>
+                                            <p>
+                                                <strong>This tool does not send or track any information.</strong>
+                                                Follow your school/child care’s established process for letting staff know about this result (if applicable).
+                                            </p>
+                                            <a tabindex="0" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT retake-test">Retake this screening</a>
+                                            <!-- -->
+                                            every day before going to school/child care.
                                         </div>
                                     </div>
-                                </div>
-                                <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
-                                    <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
-                                        <span class="approved-template__IconInfo-sc-1wl4dlr-1 bMOFeO"></span>
-                                    </div>
-                                    <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
-                                    <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
-                                        <p>You can go to school/child care.</p>
-                                        <p>If you feel sick or not well (not related to getting a COVID-19 vaccine in the last 48 hours), please stay home. Talk with a doctor if necessary.</p>
-                                        <p>
-                                            <strong>This tool does not send or track any information.</strong>
-                                            Follow your school/child care’s established process for letting staff know about this result (if applicable).
-                                        </p>
-                                        <a tabindex="0" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT retake-test">Retake this screening</a>
-                                        <!-- -->
-                                        every day before going to school/child care.
-                                    </div>
-                                </div>
-                                <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
-                                    <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
-                                        <span class="approved-template__IconInfo-sc-1wl4dlr-1 bMOFeO"></span>
-                                    </div>
-                                    <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
-                                    <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
-                                        <h2 class="h4">If you got a COVID-19 vaccine in the last 48 hours</h2>
-                                        <p>You must wear a properly fitted mask for the entire time at school/child care if you are experiencing a mild headache, fatigue, muscle aches, and/or joint pain that only began after vaccination.</p>
-                                        <p>You may take the mask off to quickly eat or drink. You must stay at least two metres away from others while it is off.</p>
-                                        <p>If your symptoms worsen, continue past 48 hours, or if you develop other symptoms: you should leave school/child care immediately to self-isolate and get a COVID-19 test.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
-                                    <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
-                                        <span class="approved-template__IconHealthSafety-sc-1wl4dlr-6 bfiIHT"></span>
-                                    </div>
-                                    <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Health and safety tips</h2>
-                                    <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
-                                        <ul>
-                                            <li>Make sure your face covering or mask covers your mouth, nose, and chin</li>
-                                            <li>Wear your face covering or mask when indoors (except to quickly eat or drink)</li>
-                                            <li>Keep a distance from others before, during, and after school/child care</li>
-                                            <li>Wash or sanitize your hands often</li>
-                                        </ul>
-                                        <p>
-                                            <a href="" target="_blank" rel="noopener" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT">Learn how students and staff will be protected.</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
-                                    <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print"></div>
-                                    <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Get the COVID-19 vaccine when eligible</h2>
-                                    <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
-                                        Vaccines are safe, effective, and the best way to protect you and those around you from COVID-19 and its variants.
-                                        <p>
-                                            <a href="" target="_blank" rel="noopener" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT">Learn about our COVID-19 vaccination program</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="callout-blue__Container-sc-20q8at-0 gVjtju">
-                                    <div class="callout-blue__Icon-sc-20q8at-1 hXHinX">
-                                        <span class="approved-template__IconFeedback-sc-1wl4dlr-3 bffpEf"></span>
-                                    </div>
-                                    <div class="callout-blue__Heading-sc-20q8at-2 hPIaxP">Feedback</div>
-                                    <div class="callout-blue__Content-sc-20q8at-3 bPJUIn">
-                                        <a href="" rel="noopener" target="_blank">Give us feedback on your experience doing the school screening today.</a>
-                                    </div>
-                                </div>
-                                <div color="#118847" class="outcome-footer__Container-sc-1eedqqm-0 dfilQA">
-                                    <div class="outcome-footer__InnerContainer-sc-1eedqqm-1 gqfsKS">
-                                        <div class="outcome-footer__Icon-sc-1eedqqm-2 eexKov">
-                                            <span class="approved-template__FooterCheckmark-sc-1wl4dlr-2 iVKxgq"></span>
+                                    <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
+                                        <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
+                                            <span class="approved-template__IconInfo-sc-1wl4dlr-1 bMOFeO"></span>
                                         </div>
-                                        <img src="data:image/png;base64,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" alt="Ontario Logo" class="outcome-footer__OntarioLogo-sc-1eedqqm-3 cEAxBG"/>
+                                        <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh"></h2>
+                                        <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
+                                            <h2 class="h4">If you got a COVID-19 vaccine in the last 48 hours</h2>
+                                            <p>You must wear a properly fitted mask for the entire time at school/child care if you are experiencing a mild headache, fatigue, muscle aches, and/or joint pain that only began after vaccination.</p>
+                                            <p>You may take the mask off to quickly eat or drink. You must stay at least two metres away from others while it is off.</p>
+                                            <p>If your symptoms worsen, continue past 48 hours, or if you develop other symptoms: you should leave school/child care immediately to self-isolate and get a COVID-19 test.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
+                                        <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
+                                            <span class="approved-template__IconHealthSafety-sc-1wl4dlr-6 bfiIHT"></span>
+                                        </div>
+                                        <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Health and safety tips</h2>
+                                        <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
+                                            <ul>
+                                                <li>Make sure your face covering or mask covers your mouth, nose, and chin</li>
+                                                <li>Wear your face covering or mask when indoors (except to quickly eat or drink)</li>
+                                                <li>Keep a distance from others before, during, and after school/child care</li>
+                                                <li>Wash or sanitize your hands often</li>
+                                            </ul>
+                                            <p>
+                                                <a href="" target="_blank" rel="noopener" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT">Learn how students and staff will be protected.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx">
+                                        <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print"></div>
+                                        <h2 class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Get the COVID-19 vaccine when eligible</h2>
+                                        <div class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">
+                                            Vaccines are safe, effective, and the best way to protect you and those around you from COVID-19 and its variants.
+                                            <p>
+                                                <a href="" target="_blank" rel="noopener" class="approved-template__Hyperlink-sc-1wl4dlr-7 cUCTWT">Learn about our COVID-19 vaccination program</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="callout-blue__Container-sc-20q8at-0 gVjtju">
+                                        <div class="callout-blue__Icon-sc-20q8at-1 hXHinX">
+                                            <span class="approved-template__IconFeedback-sc-1wl4dlr-3 bffpEf"></span>
+                                        </div>
+                                        <div class="callout-blue__Heading-sc-20q8at-2 hPIaxP">Feedback</div>
+                                        <div class="callout-blue__Content-sc-20q8at-3 bPJUIn">
+                                            <a href="" rel="noopener" target="_blank">Give us feedback on your experience doing the school screening today.</a>
+                                        </div>
+                                    </div>
+                                    <div color="#118847" class="outcome-footer__Container-sc-1eedqqm-0 dfilQA">
+                                        <div class="outcome-footer__InnerContainer-sc-1eedqqm-1 gqfsKS">
+                                            <div class="outcome-footer__Icon-sc-1eedqqm-2 eexKov">
+                                                <span class="approved-template__FooterCheckmark-sc-1wl4dlr-2 iVKxgq"></span>
+                                            </div>
+                                            <img src="data:image/png;base64,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" alt="Ontario Logo" class="outcome-footer__OntarioLogo-sc-1eedqqm-3 cEAxBG"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </main>
-                    </div>
-                </span>
+                            </main>
+                        </div>
+                    </span>
+        </div>
+        <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
     </div>
-    <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
-</div>
-</body>
+    </body>
 </html>

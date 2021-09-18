@@ -1,3 +1,5 @@
+// repo is posted on 'https://github.com/PetrelPine/ontario-auto-screening'
+
 package com.example.ScreeningTool;
 
 import androidx.appcompat.app.AlertDialog;
@@ -11,13 +13,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle("Confirmation");  //设置对话框标题
-        alertDialog.setMessage("I confirm that ALL the following information is CORRECT and I am RESPONSIBLE for the confirmation.\n" +
-                "repo is posted on 'https://github.com/PetrelPine/ontario-auto-screening'.\n\n\n" +
+        alertDialog.setTitle("Confirmation");
+        alertDialog.setMessage(
+                "\nI confirm that ALL the following information is CORRECT and I am RESPONSIBLE for the information I provided.\n\n\n" +
                 "1. I am taking this screening as a student/child.\n\n" +
                 "2. In the last 14 days, I have NOT travelled outside of Canada.\n\n" +
                 "3. There is NO doctor, health care provider, or public health unit has told me that I should currently be isolating (staying at home).\n\n" +
@@ -25,13 +26,17 @@ public class MainActivity extends AppCompatActivity {
                 "5. In the last 10 days, I have NOT received a COVID Alert exposure notification on my cell phone.\n\n" +
                 "6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.\n\n" +
                 "7. There is NOBODY I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.\n\n" +
-                "8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.");  //设置显示的内容
+                "8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.\n\n\n" +
+                "The repo is posted on Github [https://github.com/PetrelPine/ontario-auto-screening].\n\n" +
+                "Programmed by PetrelPine.");
+
         alertDialog.setPositiveButton("DECLINE", new DialogInterface.OnClickListener() {//添加退出按钮
             @Override
             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                 finish();
             }
         });
+
         alertDialog.setNegativeButton("CONFIRM", new DialogInterface.OnClickListener() {//添加确定按钮
             @SuppressLint("SetJavaScriptEnabled")
             @Override
@@ -45,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);//自适应屏幕
                 settings.setLoadWithOverviewMode(true);//自适应屏幕
                 settings.setUseWideViewPort(true);//自适应屏幕
-                settings.setSupportZoom(true);
-//                settings.setBuiltInZoomControls(true);//设置是否出现缩放工具
+                settings.setSupportZoom(true);//支持缩放
+                // settings.setBuiltInZoomControls(true);//设置是否出现缩放工具
 
                 // 如果访问的页面中要与Javascript交互，则webView必须设置支持Javascript
                 settings.setJavaScriptEnabled(true);
@@ -58,37 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-        alertDialog.show();  //在按键响应事件中显示此对话框
+
+        alertDialog.show();//显示对话框
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        initWebView();
-//        initButton();
     }
-
-//    private void initButton() {
-//        Button button_openHTML = findViewById(R.id.openHTML);
-//        button_openHTML.setOnClickListener(eventListener_1 -> {
-//            // show info msg
-//            Toast.makeText(MainActivity.this,
-//                    "Processing...", Toast.LENGTH_SHORT).show();
-//
-//            // go to actual url
-//            final Uri uri = Uri.parse("file:///android_asset/approved.html");
-//            final Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-//            Timer timer = new Timer();
-//            TimerTask task = new TimerTask() {
-//                @Override
-//                public void run() {
-//                    startActivity(intent);
-//                }
-//            };
-//            timer.schedule(task, 1);
-//        });
-//    }
-//    public void onRestart() {
-//        super.onRestart();
-//        System.exit(0);
-//    }
 }
