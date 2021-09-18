@@ -1,0 +1,94 @@
+package com.example.ScreeningTool;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setTitle("Confirmation");  //设置对话框标题
+        alertDialog.setMessage("I confirm that ALL the following information is CORRECT and I am RESPONSIBLE for the confirmation.\n" +
+                "repo is posted on 'https://github.com/PetrelPine/ontario-auto-screening'.\n\n\n" +
+                "1. I am taking this screening as a student/child.\n\n" +
+                "2. In the last 14 days, I have NOT travelled outside of Canada.\n\n" +
+                "3. There is NO doctor, health care provider, or public health unit has told me that I should currently be isolating (staying at home).\n\n" +
+                "4. In the last 10 days, I have NOT been identified as a “close contact” of someone who currently has COVID-19.\n\n" +
+                "5. In the last 10 days, I have NOT received a COVID Alert exposure notification on my cell phone.\n\n" +
+                "6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.\n\n" +
+                "7. There is NOBODY I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.\n\n" +
+                "8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.");  //设置显示的内容
+        alertDialog.setPositiveButton("DECLINE", new DialogInterface.OnClickListener() {//添加退出按钮
+            @Override
+            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
+                finish();
+            }
+        });
+        alertDialog.setNegativeButton("CONFIRM", new DialogInterface.OnClickListener() {//添加确定按钮
+            @SuppressLint("SetJavaScriptEnabled")
+            @Override
+            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
+                dialog.dismiss();
+                WebView webView = findViewById(R.id.webView);
+                WebSettings settings = webView.getSettings();
+                //需要加载的网页的url
+                webView.loadUrl("file:///android_asset/approved.html");//这里写的是assets文件夹下html文件的名称，需要带上后面的后缀名，前面的路径是安卓系统自己规定的android_asset就是表示的在assets文件夹下的意思。
+                webView.setHorizontalScrollBarEnabled(false);
+                settings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);//自适应屏幕
+                settings.setLoadWithOverviewMode(true);//自适应屏幕
+                settings.setUseWideViewPort(true);//自适应屏幕
+                settings.setSupportZoom(true);
+//                settings.setBuiltInZoomControls(true);//设置是否出现缩放工具
+
+                // 如果访问的页面中要与Javascript交互，则webView必须设置支持Javascript
+                settings.setJavaScriptEnabled(true);
+                webView.setWebViewClient(new WebViewClient(){
+                    public boolean shouldOverrideUrlLoading(WebView view, String url){
+                        view.loadUrl(url);
+                        return true;
+                    }
+                });
+            }
+        });
+        alertDialog.show();  //在按键响应事件中显示此对话框
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+//        initWebView();
+//        initButton();
+    }
+
+//    private void initButton() {
+//        Button button_openHTML = findViewById(R.id.openHTML);
+//        button_openHTML.setOnClickListener(eventListener_1 -> {
+//            // show info msg
+//            Toast.makeText(MainActivity.this,
+//                    "Processing...", Toast.LENGTH_SHORT).show();
+//
+//            // go to actual url
+//            final Uri uri = Uri.parse("file:///android_asset/approved.html");
+//            final Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//            Timer timer = new Timer();
+//            TimerTask task = new TimerTask() {
+//                @Override
+//                public void run() {
+//                    startActivity(intent);
+//                }
+//            };
+//            timer.schedule(task, 1);
+//        });
+//    }
+//    public void onRestart() {
+//        super.onRestart();
+//        System.exit(0);
+//    }
+}
