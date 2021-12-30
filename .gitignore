@@ -1,3 +1,5 @@
+# original .gitignore file contents
+
 # *.iml
 # .gradle
 # /local.properties
@@ -16,10 +18,9 @@
 # .idea/deploymentTargetDropDown.xml
 # .idea/vcs.xml
 # .idea/.name
-# app/release/output-metadata.json
-# app/release/screening_tool.apk
-# /wechat_intro.txt
 
+
+# newly added
 
 # folders
 /.gradle/

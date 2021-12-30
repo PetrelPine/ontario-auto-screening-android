@@ -1,5 +1,7 @@
+# folders
 /build/
 /libs/
 /release/
 
+# files
 proguard-rules.pro
