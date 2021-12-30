@@ -24,7 +24,6 @@
 # folders
 .gradle
 .idea
-app
 gradle
 
 # files
