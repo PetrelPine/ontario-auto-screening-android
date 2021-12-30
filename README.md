@@ -6,7 +6,7 @@
 
 ## Confirmation at Start-up
 
-+ **By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario Daily Screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
++ **By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario daily screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
 
 1. I am taking this screening as a student/child.
 
