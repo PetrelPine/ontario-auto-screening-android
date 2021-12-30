@@ -1,21 +1,37 @@
-*.iml
+# *.iml
+# .gradle
+# /local.properties
+# /.idea/caches
+# /.idea/libraries
+# /.idea/modules.xml
+# /.idea/workspace.xml
+# /.idea/navEditor.xml
+# /.idea/assetWizardSettings.xml
+# .DS_Store
+# /build
+# /captures
+# .externalNativeBuild
+# .cxx
+# local.properties
+# .idea/deploymentTargetDropDown.xml
+# .idea/vcs.xml
+# .idea/.name
+# app/release/output-metadata.json
+# app/release/screening_tool.apk
+# /wechat_intro.txt
+
+
+# folders
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea
+app
+gradle
+
+# files
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
 local.properties
-.idea/deploymentTargetDropDown.xml
-.idea/vcs.xml
-.idea/.name
-app/release/output-metadata.json
-app/release/screening_tool.apk
-/wechat_intro.txt
+settings.gradle
+wechat_intro.txt
