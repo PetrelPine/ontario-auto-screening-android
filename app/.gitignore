@@ -1,6 +1,0 @@
-/build
-/libs
-/release
-
-# build.gradle
-proguard-rules.pro
