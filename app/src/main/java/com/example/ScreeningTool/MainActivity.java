@@ -20,17 +20,18 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
         alertDialog.setTitle("Screening Confirmation");
         alertDialog.setMessage(
-                "\nI confirm that all the following information is correct and I am responsible for the confirmation and the information I provided.\n\n\n" +
-                "1. I am taking this screening as a student/child.\n\n" +
-                "2. In the last 14 days, I have NOT travelled outside of Canada.\n\n" +
-                "3. There is NO doctor, health care provider, or public health unit has told me that I should currently be isolating (staying at home).\n\n" +
-                "4. In the last 10 days, I have NOT been identified as a “close contact” of someone who currently has COVID-19.\n\n" +
-                "5. In the last 10 days, I have NOT received a COVID Alert exposure notification on my cell phone.\n\n" +
-                "6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.\n\n" +
-                "7. There are NO people I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.\n\n" +
-                "8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.\n\n\n" +
-                "This repo is posted on Github [https://github.com/PetrelPine/ontario-auto-screening-android]\n\n" +
-                "(programmed by PetrelPine)");
+            "\nI confirm that all the following information is correct and I am responsible for the confirmation and the information I provided.\n\n\n" +
+            "1. I am taking this screening as a student/child.\n\n" +
+            "2. In the last 14 days, I did NOT travel outside of Canada and was NOT told to quarantine.\n\n" +
+            "3. In the last 14 days, I did NOT travel outside of Canada and was NOT told to not attend school/child care.\n\n" +
+            "4. In the last 10 days, I have NOT experienced any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, muscle aches/joint pain, extreme tiredness, sore throat, runny or stuffy/congested nose, headache, nausea, vomiting, and/or diarrhea.\n\n" +
+            "5. In the last 10 days, I have NOT been tested positive on a lab-based PCR test, rapid antigen test, or home-based self-testing kit.\n\n" +
+            "6. I do NOT live with someone who is currently isolating because of a positive COVID-19 test.\n\n" +
+            "7. I do NOT live with someone who is currently isolating because of COVID-19 symptoms.\n\n" +
+            "8. I do NOT live with someone who is waiting for COVID-19 test results.\n\n" +
+            "9. There are NO doctors, health care providers, or public health units told me that I should currently be isolating (staying at home).\n\n" +
+            "10. I have NOT been identified as a “close contact” of someone who currently has COVID-19 and been advised to self-isolate.\n\n" +
+            "\nThis project is posted on Github [https://github.com/PetrelPine/ontario-auto-screening-android]\n\n");
 
         alertDialog.setPositiveButton("DECLINE", new DialogInterface.OnClickListener() {  //添加退出按钮
             @Override
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 settings.setLoadWithOverviewMode(true);  //自适应屏幕
                 settings.setUseWideViewPort(true);  //自适应屏幕
                 settings.setSupportZoom(true);  //支持缩放
-                // settings.setBuiltInZoomControls(true);//设置是否出现缩放工具
+                // settings.setBuiltInZoomControls(true);  //设置是否出现缩放工具
 
                 // 如果访问的页面中要与Javascript交互，则webView必须设置支持Javascript
                 settings.setJavaScriptEnabled(true);
