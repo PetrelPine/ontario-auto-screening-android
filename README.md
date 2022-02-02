@@ -6,33 +6,37 @@
 
 ## Confirmation at Start-up
 
-+ **By comfirming the following eight statements with one click at the start up of the app, it will show you the Ontario daily screening result directly without anymore clickings. You are responsible for the confirmation and the information you provided.**
++ By comfirming the following 10 statements with 1 click at the start up of the app, it will show you the Ontario daily screening result directly. **You are responsible for the confirmation and the information you provided.**
 
 1. I am taking this screening as a student/child.
 
-2. In the last 14 days, I have NOT travelled outside of Canada.
+2. In the last 14 days, I did NOT travel outside of Canada and was NOT told to quarantine.
 
-3. There is NO doctor, health care provider, or public health unit has told me that I should currently be isolating (staying at home).
+3. In the last 14 days, I did NOT travel outside of Canada and was NOT told to not attend school/child care.
 
-4. In the last 10 days, I have NOT been identified as a “close contact” of someone who currently has COVID-19.
+4. In the last 10 days, I have NOT experienced any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, muscle aches/joint pain, extreme tiredness, sore throat, runny or stuffy/congested nose, headache, nausea, vomiting, and/or diarrhea.
 
-5. In the last 10 days, I have NOT received a COVID Alert exposure notification on my cell phone.
+5. In the last 10 days, I have NOT been tested positive on a lab-based PCR test, rapid antigen test, or home-based self-testing kit.
 
-6. I am NOT currently experiencing any of these symptoms: fever and/or chills, cough or barking cough (croup), shortness of breath, decrease or loss of taste or smell, nausea, vomiting, and/or diarrhea.
+6. I do NOT live with someone who is currently isolating because of a positive COVID-19 test.
 
-7. There are NO people I live with currently experiencing any new COVID-19 symptoms and/or waiting for test results after experiencing symptoms.
+7. I do NOT live with someone who is currently isolating because of COVID-19 symptoms.
 
-8. In the last 10 days, I have NOT been tested positive on a rapid antigen test or home-based self-testing kit.
+8. I do NOT live with someone who is waiting for COVID-19 test results.
+
+9. There are NOT any doctors, health care providers, or public health units told me that I should currently be isolating (staying at home).
+
+10. I have NOT been identified as a “close contact” of someone who currently has COVID-19 and been advised to self-isolate.
 
 ## App Demos
 
-- Start Page
++ Start Page
 
-![StartPage](resource/StartPage.gif)
+<img src="resource/start_page.gif" title="" alt="Start Page" width="235">
 
-- Web Page
++ Web Page
 
-![WebPage](resource/WebPage.gif)
+<img src="resource/web_page.gif" title="" alt="Web Page" width="235">
 
 ## Thanks for the following projects
 
