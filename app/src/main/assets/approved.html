@@ -2920,14 +2920,14 @@
             /*!sc*/
         </style>
         <script>
-            window.onload=function() {//页面加载调用
+            window.onload=function() {  //页面加载调用
                 //开始先刷新一次
                 NowTime();
                 //每30秒刷新时间
                 setInterval("NowTime()",30000);
             }
 
-            function NowTime() {//更改html显示的时间
+            function NowTime() {  //更改html显示的时间
                 //获取年月日
                 var time=new Date();
                 var year=time.getFullYear();
@@ -2947,7 +2947,7 @@
                 document.getElementById("timePeriod").innerHTML="from  " + timeStart + "  to 11:59 p.m.";
             }
 
-            function setAmPm(h1, m1) {//判断上午/下午
+            function setAmPm(h1, m1) {  //判断上午/下午
                 if (m1 < 10) {
                     m1 = "0"+m1;
                 }
@@ -2960,23 +2960,23 @@
                 }
             }
 
-            function setDate(year1, month1, day1) {//判断日期
+            function setDate(year1, month1, day1) {  //判断日期
                 var x;
                 month1 += 1;
                 switch (month1)
                 {
-                  case 1:x="January"; break;
-                  case 2:x="February"; break;
-                  case 3:x="March"; break;
-                  case 4:x="April"; break;
-                  case 5:x="May"; break;
-                  case 6:x="June"; break;
-                  case 7:x="July"; break;
-                  case 8:x="August"; break;
-                  case 9:x="September"; break;
-                  case 10:x="October"; break;
-                  case 11:x="November"; break;
-                  case 12:x="December"; break;
+                  case 1: x = "January"; break;
+                  case 2: x = "February"; break;
+                  case 3: x = "March"; break;
+                  case 4: x = "April"; break;
+                  case 5: x = "May"; break;
+                  case 6: x = "June"; break;
+                  case 7: x = "July"; break;
+                  case 8: x = "August"; break;
+                  case 9: x = "September"; break;
+                  case 10: x = "October"; break;
+                  case 11: x = "November"; break;
+                  case 12: x = "December"; break;
                 }
                 //Valid September 14, 2021
                 return "Valid " + x + " " + day1 + ", " + year1;
@@ -3019,8 +3019,8 @@
                                             <div class="outcome-content-block-with-icon__Icon-l3w382-1 hQrYxV ontario-hide-for-print">
                                                 <span class="approved__IconCalendar-sc-3gu5f4-1 dVsGOl"></span>
                                             </div>
-                                            <h2 id="datePeriod", class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">Valid September 14, 2021</h2>
-                                            <div id="timePeriod", class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">from  4:27 p.m.  to 11:59 p.m.</div>
+                                            <h2 id="datePeriod", class="outcome-content-block-with-icon__Heading-l3w382-2 kZHbvh">EXAMPLE: Valid September 14, 2021</h2>
+                                            <div id="timePeriod", class="outcome-content-block-with-icon__Content-l3w382-3 kIekgJ">EXAMPLE: from  4:27 p.m.  to 11:59 p.m.</div>
                                         </div>
                                     </div>
                                     <div class="outcome-content-block-with-icon__Container-l3w382-0 jQyryx downloadPDF">
