@@ -2920,8 +2920,9 @@
             window.onload = function() {  // 页面加载调用
                 // 开始先刷新一次
                 NowTime();
-                // 每30秒刷新时间
-                setInterval("NowTime()",30000);
+
+                // 每10分钟刷新时间
+                setInterval("NowTime()", 600000);
             }
 
             function NowTime() {  // 更改html显示的时间
@@ -2948,17 +2949,17 @@
                 if (minute < 10) {
                     minute = "0" + minute;
                 }
+
                 if (hour === 0) {
                     return "12:" + minute + " a.m.";
-                }
-                else if (hour === 12) {
+                } else if (hour === 12) {
                     return "12:" + minute + " p.m.";
                 }
+
                 if (hour > 12) {
                     hour -= 12;
                     return hour + ":" + minute + " p.m.";
-                }
-                else {
+                } else {
                     return hour + ":" + minute + " a.m.";
                 }
             }
