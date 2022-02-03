@@ -2921,7 +2921,7 @@
                 // 开始先刷新一次
                 NowTime();
 
-                // 每10分钟刷新时间
+                // 每10分钟刷新
                 setInterval("NowTime()", 600000);
             }
 
@@ -2950,9 +2950,10 @@
                     minute = "0" + minute;
                 }
 
-                if (hour === 0) {
+                if (hour === 0) {  // 凌晨0点, 12:00 a.m.
                     return "12:" + minute + " a.m.";
-                } else if (hour === 12) {
+                }
+                else if (hour === 12) {  // 中午12点, 12:00 p.m.
                     return "12:" + minute + " p.m.";
                 }
 
