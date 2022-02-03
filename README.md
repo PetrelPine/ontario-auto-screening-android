@@ -1,12 +1,16 @@
-# Ontario Auto Screening (Android)
+# Ontario-auto-screening (Android app)
 
-## Download Android App
+Ontario-auto-screening website at https://github.com/PetrelPine/ontario-auto-screening-web
+
+## Download Android app
 
 + **You can always download the Android app in [releases](https://github.com/PetrelPine/ontario-auto-screening-android/releases).**
 
-## Confirmation at Start-up
+## Confirmation at start-up
 
-+ By comfirming the following 10 statements with 1 click at the start up of the app, it will show you the Ontario daily screening result directly. **You are responsible for the confirmation and the information you provided.**
+[Official Covid-19 school screening website](https://covid-19.ontario.ca/school-screening/)
+
++ By confirming the following information with only 1 click at the start up of the app, it will show you the Ontario school daily screening result directly. **You are responsible for the confirmation and the information you provided.**
 
 1. I am taking this screening as a student/child.
 
@@ -28,7 +32,7 @@
 
 10. I have NOT been identified as a “close contact” of someone who currently has COVID-19 and been advised to self-isolate.
 
-## App Demos
+## App demos
 
 + Start Page
 
